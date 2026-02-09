@@ -172,3 +172,84 @@ button:hover {
 .side-letter {
   font-size: clamp(60px, 14vw, 180px);
 }
+/* 💗 Click button */
+#loveBtn {
+  margin-top: 25px;
+  padding: 12px 28px;
+  font-size: 20px;
+  border: none;
+  border-radius: 30px;
+  background: hotpink;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 0 15px rgba(255, 105, 180, 0.6);
+  transition: transform 0.2s ease;
+}
+
+#loveBtn:hover {
+  transform: scale(1.1);
+}
+
+/* ❤️ Popup background */
+#heartPopup {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+/* ❤️ Heart shape */
+.heart {
+  width: 200px;
+  height: 200px;
+  background: hotpink;
+  position: relative;
+  transform: rotate(-45deg);
+  animation: pop 0.4s ease;
+}
+
+.heart::before,
+.heart::after {
+  content: "";
+  width: 200px;
+  height: 200px;
+  background: hotpink;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.heart::before {
+  top: -100px;
+  left: 0;
+}
+
+.heart::after {
+  left: 100px;
+  top: 0;
+}
+
+/* 💌 Message inside heart */
+.heart p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: rotate(45deg) translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  font-size: 18px;
+  width: 160px;
+  font-weight: bold;
+}
+
+/* 💥 Pop animation */
+@keyframes pop {
+  0% {
+    transform: scale(0) rotate(-45deg);
+  }
+  100% {
+    transform: scale(1) rotate(-45deg);
+  }
+}

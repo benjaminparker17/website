@@ -31,3 +31,13 @@ const rightSide = document.querySelector(".hearts.right");
 
 setInterval(() => createHeart(leftSide), 700);
 setInterval(() => createHeart(rightSide), 900);
+const btn = document.getElementById("loveBtn");
+const popup = document.getElementById("heartPopup");
+
+btn.addEventListener("click", () => {
+  popup.style.display = "flex";
+});
+
+popup.addEventListener("click", () => {
+  popup.style.display = "none";
+});
