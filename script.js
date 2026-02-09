@@ -1,7 +1,21 @@
 function checkPassword() {
   const correctPassword = "raguldivya16252007"; // 🔐 change this
-  const userPassword = document.getElementById("password").value;
-  const error = document.getElementById("error");
+  const unlockBtn = document.getElementById("unlockBtn");
+  const passwordInput = document.getElementById("password");
+  const lockScreen = document.getElementById("lockScreen");
+  const mainContent = document.getElementById("mainContent");
+  const loveBtn = document.getElementById("loveBtn");
+
+unlockBtn.addEventListener("click", () => {
+  if (passwordInput.value === correctPassword) {
+    lockScreen.style.display = "none";
+    mainContent.style.display = "block";
+    loveBtn.style.display = "inline-block"; // 💖 show button
+  } else {
+    alert("Wrong password 💔");
+  }
+});
+
 
   if (userPassword === correctPassword) {
     document.getElementById("login-box").style.display = "none";

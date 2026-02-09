@@ -184,6 +184,9 @@ button:hover {
   cursor: pointer;
   box-shadow: 0 0 15px rgba(255, 105, 180, 0.6);
   transition: transform 0.2s ease;
+  display: none; /* 🔒 hidden initially */
+}
+
 }
 
 #loveBtn:hover {
