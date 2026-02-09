@@ -169,3 +169,6 @@ button:hover {
     text-shadow: 0 0 8px rgba(255, 77, 136, 0.4);
   }
 }
+.side-letter {
+  font-size: clamp(60px, 14vw, 180px);
+}
