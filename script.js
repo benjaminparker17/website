@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-  const correctPassword = "RDforever";
+  const correctPassword = "divi";
 
   const checkBtn = document.getElementById("checkBtn");
   const passwordInput = document.getElementById("password");
