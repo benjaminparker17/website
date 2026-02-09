@@ -1,5 +1,5 @@
 function checkPassword() {
-  const correctPassword = "ragul"; // 🔐 change this
+  const correctPassword = "raguldivya16252007"; // 🔐 change this
   const userPassword = document.getElementById("password").value;
   const error = document.getElementById("error");
 
@@ -7,7 +7,7 @@ function checkPassword() {
     document.getElementById("login-box").style.display = "none";
     document.getElementById("secret-content").style.display = "block";
   } else {
-    error.textContent = "Wrong password 💔 Try again";
+    error.textContent = "Thappa Podra da Loosu 💔 Try again";
   }
 }
 function createHeart(side) {
