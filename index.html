@@ -3,44 +3,53 @@
 <head>
   <meta charset="UTF-8">
   <title>Secret Website ❤️</title>
-  <link rel="stylesheet" href="style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-<div class="hearts left"></div>
-<div class="hearts right"></div>
 
-<div class="lock-wrapper">
-  <div class="side-letter left-letter">R</div>
+  <!-- Floating hearts -->
+  <div class="hearts left"></div>
+  <div class="hearts right"></div>
 
-  <div id="login-box">
-  <h2> HI da RAGUL eyy</h2>
-  <p>Mudinja Password Kandupudi daa!!! 💗</p>
+  <!-- LOGIN SCREEN -->
+  <div class="lock-wrapper">
+    <div class="side-letter">R</div>
 
-  <input type="password" id="password" placeholder="Secret code...">
-  <button onclick="checkPassword()"> Crt ah podu 💖</button>
-  <p id="error"></p>
-</div>
-<div class="side-letter right-letter">D</div>
-</div>
+    <div id="login-box">
+      <h2>HI da RAGUL eyy</h2>
+      <p>Mudinja password kandupudi daa 💗</p>
 
+      <input type="password" id="password" placeholder="Secret code...">
+      <button id="checkBtn" type="button">Crt ah podu 💖</button>
 
-  <!-- Secret Content -->
-  <div id="secret-content">
-    <h1>❤️ Welcome, Ragul❤️</h1>
-    <p>Website is under construction , will be finished soon.</p>
+      <p id="error"></p>
+    </div>
+
+    <div class="side-letter">D</div>
   </div>
 
+  <!-- SECRET CONTENT (hidden initially) -->
+  <div id="secret-content" style="display:none;">
+    <h1>❤️ Welcome Ragul ❤️</h1>
+    <p>Website under construction, will finish soon 😌</p>
+    <button id="loveBtn" type="button">💗 Click here</button>
+  </div>
+
+  <!-- HEART POPUP (hidden initially) -->
+  <div id="heartPopup" style="display:none;">
+    <div class="popup-box">
+      <div class="popup-heart">💖</div>
+      <p>
+        You are my favorite person 💕<br>
+        Forever & always 💖
+      </p>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
   <script src="script.js"></script>
-   <button id="loveBtn">💗 Click here</button>
-</div>
+
 </body>
 </html>
-
-
-<div id="heartPopup">
-  <div class="heart">
-    <p>You are my favorite person 💕<br>Forever & always 💖</p>
-  </div>
-</div>
